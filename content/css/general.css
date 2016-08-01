@@ -95,6 +95,7 @@ a:hover {
     margin-top:70px;
     background-color: #e7e5f6;
     position:relative;
+    overflow: hidden;
 }
 
 .get-started > h4 {
@@ -131,6 +132,7 @@ a:hover {
 /* Biomedis Online Icons */
 .biomedis-online-icons {
     background-color: #50508d;
+    overflow: hidden;
 }
 
 .icon-items > div {
@@ -149,7 +151,9 @@ a:hover {
 /* end Biomedis Online Icons */
 
 /* Connect block */
-
+.connect-block {
+    overflow:hidden;
+}
 
 .notebook-man {
     position:absolute;
