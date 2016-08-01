@@ -1,0 +1,28 @@
+html, body {
+    margin:0px; padding:0px;
+    font-size:12pt;
+    font-family:Arial;
+}
+
+
+
+
+
+
+/** Menu Style **/
+
+/** end-Menu Style **/
+
+
+/** Block styles **/
+
+/* GetStarted block */
+.get-started {
+    padding: 20px;
+    margin-top:50px;
+    background-color: #e7e5f6;
+}
+/* GetStarted block */
+
+/** end Block styles **/
+
