@@ -156,11 +156,11 @@ div.scrollup {
     display:none;
     text-align:center;
     color:white;
-    background-color: #45b4d0;
+    background-color: #b6549f;
     font-size:16pt;
     z-index:15000; transition:1s;
 }
 
 div.scrollup:hover {
-    background-color:#338093; transition:1s;
+    background-color:#50508d; transition:1s;
 }

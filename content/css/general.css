@@ -18,7 +18,7 @@ a:hover {
 
 /** Menu Style **/
 .top-menu {
-    max-width:1200px;
+    max-width:1280px;
     height:70px;
     padding-top:10px;
     background-color: #fff;
@@ -79,7 +79,7 @@ a:hover {
 /** Block styles **/
 
 .main-block {
-    max-width:1200px;
+    max-width:1280px;
     box-shadow:0px 0px 15px 0px #c8c8c8;
     overflow:hidden;
     background-color: #fff;
@@ -139,6 +139,31 @@ a:hover {
 
 
 /* end Biomedis Online Icons */
+
+/* Connect block */
+.connect-block {
+    position: relative;
+}
+
+.notebook-man {
+    position:absolute;
+    left:30px;
+    top:70px;
+}
+
+.running-girl{
+    position:absolute;
+    right:30px;
+    top:0px;
+}
+
+.text-block-connect {
+    color: #878787;
+    font-size:13pt;
+}
+
+/* end Connect block */
+
 
 /** end Block styles **/
 
