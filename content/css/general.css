@@ -114,6 +114,10 @@ a:hover {
 /* GetStarted block */
 
 /* What is Block */
+
+.what-is {
+    padding-bottom:10px;
+}
 .what-is > div:nth-child(2) > p {
     max-width:600px;
     margin:0px auto;
@@ -145,9 +149,7 @@ a:hover {
 /* end Biomedis Online Icons */
 
 /* Connect block */
-.connect-block {
-    position: relative;
-}
+
 
 .notebook-man {
     position:absolute;
@@ -198,12 +200,16 @@ a:hover {
     color: #878787;
 }
 
-.instructions > div:nth-child(2) >  div:last-child > img, .instructions > div:nth-child(3) > div:last-child > img {
+.instructions > div:nth-child(2) >  div:last-child , .instructions > div:nth-child(3) > div:last-child  {
     max-width:500px; margin:0px auto;
 }
 
 .instructions > div:nth-child(4) > div:first-child, .instructions > div:nth-child(5) > div:first-child, .instructions > div:nth-child(6) > div:first-child {
     max-width:500px; margin:0px auto;
+}
+
+.video-block {
+    margin-bottom: 50px;
 }
 
 .video-block > div {
@@ -219,6 +225,71 @@ a:hover {
 .footer {
     background-color:#5a5a94;
 }
+
+.footer > div:nth-child(1), .footer > div:nth-child(2) {
+    padding-left:80px; padding-right:80px;
+}
+
+.white-line {
+    background:rgba(255,255,255, 0.1);
+    padding:10px;
+    font-size:14pt;
+}
+
+.socials {
+    margin:0px; padding:0px;
+}
+
+.socials > li {
+    margin:0px 10px 0px 0px; padding:0px;
+}
+
+.socials > li:first-child {
+    opacity: 0.5;
+    font-weight:bolder;
+}
+
+.socials > li > a > img {
+    width:35px;
+    transition: 1.5s;
+}
+
+.socials > li > a > img:hover {
+    box-shadow: 0px 0px 10px 0px #f3bff1;
+    transition: 0.5s;
+}
+
+.footer-menu {
+    padding:0px; margin:0px; list-style-type: none; -moz-list-style-type: none; position:relative; z-index:100;
+}
+
+.footer-menu > li > a:link {
+    color: #a5a5c1;
+}
+
+.footer-menu > li > a:hover {
+    color: #fff;
+}
+
+.footer-menu > li > a:active {
+     color: #fff;
+ }
+
+.footer-menu > li > a:visited {
+    color: #a5a5c1;
+}
+
+.footer-menu > li {
+    padding:0px;
+}
+
+.corner-right-footer {
+    background-image: url('../imagesi/right-corner.png');
+    position:absolute;
+    bottom:0px; right:0px;
+    width:989px; height:291px;
+}
+
 /* end FOOTER */
 
 
