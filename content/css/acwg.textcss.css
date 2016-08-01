@@ -61,7 +61,7 @@ html, body {
 .alg-center {text-align:center;}
 .alg-right {text-align:right;}
 .alg-left {text-align:left;}
-.alg-left {text-align:justify;}
+.alg-just {text-align:justify;}
 
 .pdng-0 {padding:0px;}
 .pdng-5 {padding:5px;}
@@ -122,10 +122,10 @@ html, body {
 .mgn-bottom-15 {margin-bottom:15px;}
 
 .mgn-20 {margin:20px;}
-.mgn-left-5 {margin-left:20px;}
-.mgn-right-5 {margin-right:20px;}
-.mgn-top-5 {margin-top:20px;}
-.mgn-bottom-5 {margin-bottom:20px;}
+.mgn-left-20 {margin-left:20px;}
+.mgn-right-20 {margin-right:20px;}
+.mgn-top-20 {margin-top:20px;}
+.mgn-bottom-20 {margin-bottom:20px;}
 
 .mgn-25 {margin:25px;}
 .mgn-left-25 {margin-left:25px;}
