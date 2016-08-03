@@ -1,6 +1,8 @@
 html, body {
     font-size: 12pt;
     font-family:Arial;
+    background-color: #d6d6d6;
+
 }
 
 a:link {
@@ -19,6 +21,12 @@ a:active {
     transition: 0.5s;
 }
 
+.badge {
+    background-color: #fff;
+    color:#50508e;
+    border-radius:5px !important;
+}
+
 .service-menu {
     max-width:1280px;
     background-color: #50508e;
@@ -26,17 +34,23 @@ a:active {
 
 .main-block {
     max-width:1280px;
-    overflow: hidden;
+    box-shadow:0px 0px 15px 0px #c8c8c8;
+    overflow:hidden;
+    background-color: #e8e8e8;
 }
 
 .left-corner {
     position:absolute;
     top:0px; left:0px;
-    opacity:0.3;
+    height:50px;
+}
+
+.icon-bar {
+    border:1px solid #6c6c6c !important;
 }
 
 .navbar-brand {
-    position:relative; z-index:100;
+    position:relative; z-index:100; margin-left: 30px;
 }
 
 .navbar-brand:link{
@@ -47,4 +61,164 @@ a:active {
 .navbar-brand:hover{
     color: #9e9ed8 !important;
     text-decoration: none;
+}
+
+.navbar-nav > li > a:link {
+     color: #fff !important;
+     text-decoration: none;
+ }
+
+.navbar-nav > li:last-child > a:link {
+    opacity:0.5;
+    padding-left:50px;
+}
+
+.navbar-nav > li > a:hover {
+    color: #9e9ed8 !important;
+    text-decoration: none;
+}
+
+.navbar-nav > li > a:active {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.navbar-nav > li > a:visited {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.user-header {
+    background-color: #50508e;
+    margin-top:50px;
+    min-height:170px;
+}
+
+.user-photo {
+    max-width:140px;
+    position: absolute;
+    top: 20px;
+    border-radius: 8px;
+    border: 5px solid #fff;
+}
+
+.user-info-block {
+    padding-top:20px;
+}
+
+.user-status {
+    padding-top:20px;
+}
+
+.user-status > div{
+    padding:5px;
+    color: #fff;
+    background:rgba(255,255,255, 0.1);
+    border-radius: 5px;
+}
+.user-status > div > h4:last-child{
+    font-size:11pt;
+}
+
+div.user-navigation {
+    margin-top:30px;
+}
+
+.user-navigation > ul {
+    position:relative;
+    bottom:-10px;
+    text-transform: uppercase;
+}
+
+.user-navigation > ul > li > a:link {
+     color: #fff;
+     opacity:0.4;
+}
+
+.user-navigation > ul > li.active {
+    border-bottom:3px solid #fff;
+}
+
+.user-navigation > ul > li > a:link.active {
+    color: #fff;
+    font-weight: bolder;
+    opacity:1.0;
+}
+
+.user-navigation > ul > li > a:hover {
+    color: #fff;
+    opacity:1.0;
+    text-decoration: none;
+}
+
+
+/* tiles */
+
+.left-container > div {
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px #c8c8c8;
+}
+
+.right-container > div {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0px 5px 10px 0px #c8c8c8;
+}
+
+.tile-user-activity {
+    padding:15px;
+    background-color:#fff;
+    max-width:300px;
+}
+
+.tile-user-activity > div {
+    background-color:#2d75b8;
+    text-transform: uppercase;
+    margin:5px;
+}
+
+.tile-user-activity > div > div:first-child {
+    font-weight:bolder;
+    font-size:10pt;
+    color:#fff;
+    padding:10px;
+    background:rgba(255,255,255,0.1);
+}
+
+.tile-user-activity > div > section {
+    font-size:10pt;
+    width:100%;
+    margin-top:30px; margin-bottom:30px;
+}
+
+.tile-user-activity > div > section > div:nth-child(1) > img {
+    width:40px;
+    vertical-align: middle;
+}
+
+.tile-user-activity > div > section > div:nth-child(1) {
+    float:left;
+    width:20%;
+}
+.tile-user-activity > div > section > div:nth-child(2) {
+    float:left;
+    width:70%;
+}
+
+.tile-user-activity > div > section > div:nth-child(3) {
+    float:right;
+    width:10%;
+}
+
+.tile-user-activity > div > section > div > a:link {
+    color: #fff;
+}
+
+.tile-user-activity > div > section > div > a:hover {
+    color: #fff;
+    opacity:0.6;
+    text-decoration:none;
+}
+
+.right-container > div {
+    margin-bottom:30px;
 }
