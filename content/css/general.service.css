@@ -1,0 +1,50 @@
+html, body {
+    font-size: 12pt;
+    font-family:Arial;
+}
+
+a:link {
+    transition: 0.5s;
+}
+
+a:hover {
+    transition: 0.5s;
+}
+
+a:visited {
+    transition: 0.5s;
+}
+
+a:active {
+    transition: 0.5s;
+}
+
+.service-menu {
+    max-width:1280px;
+    background-color: #50508e;
+}
+
+.main-block {
+    max-width:1280px;
+    overflow: hidden;
+}
+
+.left-corner {
+    position:absolute;
+    top:0px; left:0px;
+    opacity:0.3;
+}
+
+.navbar-brand {
+    position:relative; z-index:100;
+}
+
+.navbar-brand:link{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.navbar-brand:hover{
+    color: #9e9ed8 !important;
+    text-decoration: none;
+}
