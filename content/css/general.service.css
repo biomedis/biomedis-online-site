@@ -249,7 +249,6 @@ div.user-navigation {
 }
 
 .tile-user-activity {
-    background-color:#fff;
 }
 
 .tile-user-activity > div {
@@ -402,6 +401,29 @@ ul.news-list li > a:visited {
     text-decoration: none;
 }
 
+.tile-wiki > div {
+    background-color: #b82d5b;
+    margin:5px;
+    padding-top:26px;
+    padding-bottom: 20px;
+}
+
+.tile-wiki > div > a > div > span {
+    font-size:14pt;
+}
+
+.tile-wiki > div > a:link {
+    color:#fff;
+}
+
+.tile-wiki > div > a:hover {
+    opacity:0.6;
+}
+
+.tile-wiki > div > a:visited {
+    color:#fff;
+}
+
 .tile-settings > a > div {
     background-color: #919191;
     text-align: center;
@@ -418,20 +440,27 @@ ul.news-list li > a:visited {
     text-decoration: none;
 }
 
-.tile-faq > a > div {
+.tile-faq > div {
     background-color: #767676;
     text-align: center;
     margin:5px;
-    text-transform: uppercase;
     color:#fff;
     padding-top:20px;
     padding-bottom:15px;
+    overflow: hidden;
 }
 
-.tile-faq >  a > div > div {
-    padding-top:10px;
-    font-weight:bolder;
-    text-decoration: none;
+.tile-faq  > div > span:nth-child(1) {
+    position:relative;
+    top:-15px; right:-36%;
+    z-index:100;
+}
+
+.tile-faq  > div > div:nth-child(2) {
+    font-size:19pt; font-weight:bolder;
+    padding-bottom:16px;
+    text-transform: uppercase;
+
 }
 
 .tile-support > a > div {
@@ -446,6 +475,17 @@ ul.news-list li > a:visited {
 .tile-support >  a > div > div {
     padding-top:10px;
     font-weight:bolder;
+    text-decoration: none;
+}
+
+.tile-support >  a:link > div > div, .tile-support >  a:link > div > img {
+    color:#fff;
+    transition: 1.0s;
+}
+
+.tile-support >  a:hover > div > div, .tile-support >  a:hover > div > img {
+    opacity:0.6;
+    transition: 0.5s;
     text-decoration: none;
 }
 
