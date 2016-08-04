@@ -496,6 +496,48 @@ ul.news-list li > a:visited {
     margin-bottom:30px;
 }
 
+ul.follow-list {
+    list-style-type: none;
+    padding:0px; margin:0px;
+    padding-bottom:10px;
+}
+
+ul.follow-list li {
+    padding-top:10px; padding-bottom:10px; border-bottom:2px solid #cecece;
+}
+
+/*ul.follow-list li > div:nth-child(1) {*/
+    /*width:35%; float:left;*/
+/*}*/
+
+/*ul.follow-list li > div:nth-child(2) {*/
+    /*width:65%; float:left;*/
+/*}*/
+
+ul.follow-list li > div:nth-child(1) > img {
+    width:80px; border-radius:5px; border:5px solid #fff;
+}
+
+ul.follow-list li > div:nth-child(2) > span {
+    font-size:10pt;
+}
+
+.follow-container > div:last-child {
+    font-size:10pt;
+    padding-bottom:10px;
+}
+
+ul.topic-list {
+    list-style-type: none;
+    padding:0px; margin:0px;
+    padding-bottom:10px;
+}
+
+.topic-container > div:last-child {
+    font-size:10pt;
+    padding-bottom:10px;
+}
+
 
 /* FOOTER */
 .footer {
@@ -564,6 +606,16 @@ ul.news-list li > a:visited {
     position:absolute;
     bottom:0px; right:0px;
     width:989px; height:291px;
+}
+
+
+ul.footer-menu-politic > li > a:link {
+    color:#fff;
+    opacity: 0.6;
+}
+ul.footer-menu-politic > li > a:hover {
+    color:#fff;
+    opacity: 1.0;
 }
 
 /* end FOOTER */

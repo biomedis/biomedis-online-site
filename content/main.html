@@ -52,32 +52,7 @@
         </div>
     </nav>
 
-    <!--<nav role="navigation" class="navbar center-block service-menu navbar-fixed-top">-->
-        <!--<div class="navbar-header">-->
-            <!--<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" style="background-color:#e0e0e0;">-->
-                <!--<span class="sr-only">Toggle navigation</span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            <!--</button>-->
-            <!--<img src="imagesi/service-left-corner.png" class="left-corner"/>-->
-            <!--<a href="#" class="navbar-brand" title="Нажмите, чтобы перейти к вашему профилю">@eignatik17</a>-->
-        <!--</div>-->
-        <!--<div id="navbarCollapse" class="collapse navbar-collapse" style="padding-right:15px;">-->
-            <!--<ul class="nav navbar-nav navbar-right">-->
-                <!--<li><a href="#">Главная</a></li>-->
-                <!--<li><a href="#">Wiki</a></li>-->
-                <!--<li><a href="#">Блоги</a></li>-->
-                <!--<li><a href="#">FAQ</a></li>-->
-                <!--<li><a href="#">Помощь</a></li>-->
-                <!--<li><a href="#">Биомедис</a></li>-->
-
-                <!--<li><a href="login.html">ВЫХОД</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</nav>-->
-
-    <div class="row user-header">
+    <div class="row user-header wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.6s">
         <div class="col-lg-12">
             <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
                 <img src="imagesi/me.jpg" class="user-photo"/>
@@ -116,7 +91,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-user-activity">
@@ -224,7 +199,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-faq">
                     <div class="tile">
                         <span class="badge"><a href="#" title="Два новых ответа в вопросах, в которых вы участвуете">2</a> &nbsp;|&nbsp; new</span>
-                        <div>faq</div>
+                        <div>консультация</div>
                         <div><a href="#" class="btn btn-default">Ответы</a> <a href="#"  class="btn btn-primary">Спросить</a></div>
                     </div>
                 </div>
@@ -247,9 +222,62 @@
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
             <div class="col-lg-12">
                 <h4 class="clr-darkviolet">Интересные подписки</h4>
+                <div class="follow-container">
+                    <ul class="follow-list">
+                        <li class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+                                <img src="imagesi/me1.jpg"/>
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8">
+                                <a href="#">@ivanov</a><br/>
+                                <span>Врач-терапевт</span><br/>
+                                <a href="#" class="btn btn-default btn-sm">Подписаться</a>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+                                <img src="imagesi/me2.jpg"/>
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8">
+                                <a href="#">@gregory</a><br/>
+                                <span>Научный сотрудник</span><br/>
+                                <a href="#" class="btn btn-default btn-sm">Подписаться</a>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+                                <img src="imagesi/me3.jpg"/>
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8">
+                                <a href="#">@eliz-iv</a><br/>
+                                <span>Исследователь</span><br/>
+                                <a href="#" class="btn btn-default btn-sm">Подписаться</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="alg-center">
+                        <a href="#" >другие подписки</a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-12">
                 <h4 class="clr-darkviolet">Популярные темы</h4>
+                <div class="topic-container">
+                    <ul class="topic-list">
+                        <li><a href="#">Создание программ</a></li>
+                        <li><a href="#">Улучшение здоровья</a></li>
+                        <li><a href="#">Как работают БРТ</a></li>
+                        <li><a href="#">Почему БРТ?</a></li>
+                        <li><a href="#">Обновление прошивки</a></li>
+                        <li><a href="#">Новые программы</a></li>
+                        <li><a href="#">Популярные заблуждения</a></li>
+                        <li><a href="#">Убираем головную боль</a></li>
+                        <li><a href="#">Как вылечить почки</a></li>
+                    </ul>
+                    <div class="alg-center">
+                        <a href="#" >еще темы</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -264,6 +292,7 @@
                 <li><a href="#"><img src="imagesi/instagram.jpg"/></a></li>
             </ul>
         </div>
+
         <div class="col-lg-12 mgn-top-25">
             <span class="clr-white txt-bold">Разделы</span>
             <ul class="footer-menu">
@@ -273,7 +302,17 @@
                 <li><a href="#">Приборы</a></li>
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Помощь</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Консультация</a></li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 alg-center" style="position: relative; z-index:10; bottom:-15px;">
+            <ul class="list-inline footer-menu-politic">
+                <li><b>&copy; BiomedisOnline, 2016</b></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Условия и соглашения</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Обратная свзяь</a></li>
             </ul>
         </div>
 
