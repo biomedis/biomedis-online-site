@@ -20,6 +20,7 @@ var main = {
             this.registration.initSections();
             this.registration.sectionsListeners.initNameListener();
             this.registration.sectionsListeners.initLoginListener();
+            this.registration.sectionsListeners.initEmailListener();
         },
     registration: {
         sections: {
@@ -53,8 +54,8 @@ var main = {
                 });
                 nextButton.click(function(){
                     nextButton.attr("disabled", "disabled");
-                    $("section:nth-child(1) > div.message").append("Приятно познакомиться, <b>" + firstName.val() + " " + lastName.val() + "</b>").fadeIn(600);
-                    main.registration.showSection(main.registration.sections.sectionLogin);
+                    $("section:nth-child(1) > div.message").append("Приятно познакомиться, <b>" + firstName.val() + " " + lastName.val() + "</b>").slideDown(600);
+                    setTimeout('main.registration.showSection(main.registration.sections.sectionLogin)', 1400);
                 })
             },
 
@@ -78,7 +79,7 @@ var main = {
                         }
                         message.hide();
                         message.empty();
-                        message.append("Ой, кажется, у кого-то уже есть такой логин! Надо придумать другой...").fadeIn(600);;
+                        message.append("Ой, кажется, у кого-то уже есть такой логин! Надо придумать другой...").slideDown(600);;
                     } else {
                         message.hide();
                         message.empty();
@@ -94,9 +95,44 @@ var main = {
                     nextButton.click(function(){
                         nextButton.attr("disabled", "disabled");
                         message.hide().empty();
-                        message.append("Вы придумали отличный логин!").fadeIn(600);
-                        main.registration.showSection(main.registration.sections.sectionLogin);
+                        message.append("Вы придумали отличный логин!").slideDown(600);
+                        setTimeout('main.registration.showSection(main.registration.sections.sectionEmail)', 1400);
+
                     })
+                })
+            },
+
+            initEmailListener: function(){
+                var email = $("[name = email]");
+                var nextButton = $("section:nth-child(3) > div.form-inline > button.next-button");
+
+                function validateEmail(email) {
+                    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(email);
+                }
+
+                email.keyup(function(){
+                    if(email.val()!="" && validateEmail(email.val())){
+                        nextButton.removeAttr("disabled");
+                        if(email.hasClass("error")){
+                            email.removeClass("error");
+                        }
+                        if(!email.hasClass("success")){
+                            email.addClass("success");
+                        }
+                    } else {
+                        nextButton.attr("disabled", "disabled");
+                        if(email.hasClass("success")){
+                            email.removeClass("success");
+                        }
+                        if(!email.hasClass("error")){
+                            email.addClass("error");
+                        }
+                    }
+                });
+                nextButton.click(function(){
+                    nextButton.attr("disabled", "disabled");
+                    main.registration.showSection(main.registration.sections.sectionPassword);
                 })
             }
         },
@@ -105,7 +141,7 @@ var main = {
                 if(section.hasClass("invisible")){
                     section.hide();
                     section.removeClass("invisible");
-                    section.slideDown(1300);
+                    section.slideDown(1600);
                 } else {
                     /* добавить фигню для проверки открытия блока и перевижения фокуса */
                     return;
