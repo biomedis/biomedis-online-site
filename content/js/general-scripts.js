@@ -21,6 +21,7 @@ var main = {
             this.registration.sectionsListeners.initNameListener();
             this.registration.sectionsListeners.initLoginListener();
             this.registration.sectionsListeners.initEmailListener();
+            this.registration.sectionsListeners.initPasswordListener();
         },
     registration: {
         sections: {
@@ -71,24 +72,16 @@ var main = {
                     }
                     if(main.registration.verifications.isLoginExist(login.val())){
                         nextButton.attr("disabled", "disabled");
-                        if(login.hasClass("success")){
-                            login.removeClass("success");
-                        }
-                        if(!login.hasClass("error")){
-                            login.addClass("error");
-                        }
+                        main.registration.showBorderStatus.showError(login);
+
                         message.hide();
                         message.empty();
                         message.append("Ой, кажется, у кого-то уже есть такой логин! Надо придумать другой...").slideDown(600);;
                     } else {
                         message.hide();
                         message.empty();
-                        if(login.hasClass("error")){
-                            login.removeClass("error");
-                        }
-                        if(!login.hasClass("success")){
-                            login.addClass("success");
-                        }
+                        main.registration.showBorderStatus.showSuccess(login);
+
                         nextButton.removeAttr("disabled");
                     }
 
@@ -114,27 +107,80 @@ var main = {
                 email.keyup(function(){
                     if(email.val()!="" && validateEmail(email.val())){
                         nextButton.removeAttr("disabled");
-                        if(email.hasClass("error")){
-                            email.removeClass("error");
-                        }
-                        if(!email.hasClass("success")){
-                            email.addClass("success");
-                        }
+                        main.registration.showBorderStatus.showSuccess(email);
                     } else {
                         nextButton.attr("disabled", "disabled");
-                        if(email.hasClass("success")){
-                            email.removeClass("success");
-                        }
-                        if(!email.hasClass("error")){
-                            email.addClass("error");
-                        }
+                        main.registration.showBorderStatus.showError(email);
+
                     }
                 });
                 nextButton.click(function(){
                     nextButton.attr("disabled", "disabled");
                     main.registration.showSection(main.registration.sections.sectionPassword);
                 })
+            },
+
+            initPasswordListener: function(){
+                var password = $("[name = password]");
+                var passwordCheck = $("[name = passwordCheck]");
+                var message = $("section:nth-child(4) > div.message");
+                var nextButton = $("section:nth-child(4) > div.form-inline > button.next-button");
+
+                function passwordValidate(){
+                    if(password.val().length<6){
+                        main.registration.showBorderStatus.showError(password);
+                        passwordCheck.attr("disabled", "disabled");
+                        return;
+                    } else {
+                        main.registration.showBorderStatus.showSuccess(password);
+                        passwordCheck.removeAttr("disabled");
+                    }
+                }
+
+                function passwordCheckValidate(){
+                    if(passwordCheck.val() == password.val()){
+                        main.registration.showBorderStatus.showSuccess(passwordCheck);
+                        nextButton.removeAttr("disabled");
+                    } else {
+                        main.registration.showBorderStatus.showError(passwordCheck);
+                        nextButton.attr("disabled", "disabled");
+                        return;
+                    }
+                }
+
+                password.keyup(function(){
+                    passwordValidate();
+                });
+
+                passwordCheck.keyup(function(){
+                    passwordCheckValidate();
+                });
+
+                nextButton.click(function(){
+                    nextButton.attr("disabled", "disabled");
+                    main.registration.showSection(main.registration.sections.sectionFinish);
+                });
             }
+        },
+
+        showBorderStatus: {
+              showSuccess: function(item){
+                  if(item.hasClass("error")){
+                      item.removeClass("error");
+                  }
+                  if(!item.hasClass("success")){
+                      item.addClass("success");
+                  }
+              },
+
+            showError: function(item){
+                if(item.hasClass("success")){
+                    item.removeClass("success");
+                }
+                if(!item.hasClass("error")){
+                    item.addClass("error");
+                }
+            },
         },
 
         showSection: function(section){
