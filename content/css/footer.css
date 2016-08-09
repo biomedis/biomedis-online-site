@@ -70,4 +70,16 @@
     width:989px; height:291px;
 }
 
+ul.footer-menu-politic {
+    opacity:0.6;
+}
+
+ul.footer-menu-politic li > a:link{
+    color: #fff;
+}
+
+ul.footer-menu-politic li > a:visited{
+    color: #fff;
+}
+
 /* end FOOTER */
