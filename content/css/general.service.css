@@ -253,7 +253,7 @@ ul.news-list li > a:visited {
     color:#fff;
 }
 
-.tile-blogs > a > div {
+.tile-blogs > div {
     background-color: #e56e47;
     text-align: center;
     margin:5px;
@@ -263,10 +263,38 @@ ul.news-list li > a:visited {
     padding-bottom:15px;
 }
 
-.tile-blogs >  a > div > div {
+.tile-blogs > div > div {
     padding-top:10px;
     font-weight:bolder;
     text-decoration: none;
+}
+
+.tile-blogs > div > a > span {
+    opacity:1.0;
+    transition:0.5s;
+}
+
+.tile-blogs > div > a > span:hover {
+    opacity:0.4;
+    transition:0.5s;
+}
+
+.tile-blogs > div > a:nth-child(3) > span{
+    position:absolute; right:20px; top:15px;
+    background-image:url('../imagesi/plus.png');
+    width: 12px; height: 12px;
+}
+
+.tile-blogs > div > a:nth-child(4) > span{
+    position:absolute; right:20px; top:37px;
+    background-image:url('../imagesi/book.png');
+    width: 12px; height: 12px;
+}
+
+.tile-blogs > div > a:nth-child(5) > span{
+    position:absolute; right:20px; top:59px;
+    background-image:url('../imagesi/lines.png');
+    width: 12px; height: 12px;
 }
 
 .tile-users > a > div {
