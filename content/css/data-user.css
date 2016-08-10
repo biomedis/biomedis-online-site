@@ -48,3 +48,16 @@
     margin-bottom:10px;
 }
 
+/*  edit  */
+
+.edit-item {
+    padding-top:15px; padding-bottom:15px;
+}
+.bottom-border {
+    border-bottom:1px solid #c9c9c9;
+}
+
+.edit-tabs > .tab-pane {
+    background-color:#fff;
+    padding:10px;
+}
