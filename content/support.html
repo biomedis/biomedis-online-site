@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/acwg.textcss.css"/>
     <link rel="stylesheet" href="css/general.service.css"/>
+    <link rel="stylesheet" href="css/general.support.css"/>
     <link rel="stylesheet" href="css/mainmenu.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
 
@@ -97,131 +98,48 @@
 
     <div class="row wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 left-container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-user-activity">
-                    <div class="tile">
-                        <div>моя активность</div>
+            <div class="row" style="background:rgba(255,255,255,0.5);">
 
-                        <section>
-                            <div><img src="imagesi/statistic.png"/></div>
-                            <div><a href="#">статистика</a></div>
-                            <div><span class="badge"></span></div>
-                            <div class="clear-bth"></div>
-                        </section>
+                <div class="col-lg-12" style="border-bottom:1px solid #c9c9c9;"><h3 class="alg-center clr-darkviolet text-uppercase" style="margin-top:0px;">Cтраница службы поддержки</h3></div>
+                <div class="col-lg-12">
 
-                        <section>
-                            <div><img src="imagesi/progr.png"/></div>
-                            <div><a href="#">программы</a></div>
-                            <div><span class="badge">1</span></div>
-                            <div class="clear-bth"></div>
-                        </section>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#panel1">Создание тикета</a></li>
+                        <li><a data-toggle="tab" href="#panel2">Ответы <span class="badge dark-badge">1</span></a></li>
+                    </ul>
 
-                        <section>
-                            <div><img src="imagesi/answers.png"/></div>
-                            <div><a href="#">ответы</a></div>
-                            <div><span class="badge">3</span></div>
-                            <div class="clear-bth"></div>
-                        </section>
-
-
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 tile-base tile-news">
-                    <div class="tile">
-                        <div>
-                            <div class="visible-xs-block" style="margin-top:40px;"></div>
-                            <img src="imagesi/newspapperman.png"/>
+                    <div class="tab-content">
+                        <div id="panel1" class="tab-pane fade in active">
+                            <h3>Создать тикет</h3>
+                            <p class="alg-just pdng-15">На этой странице вы можете создать тикет (обращение) в службе поддержки. Вы можете кратко указать тему обращения, описать саму проблему и прикрепить некоторые файлы: JPG, GIF, PNG и ZIP. Ваши обращения остаются в системе, вы всегда их сможете найти в ответах этого модуля.<br/><br/>
+                                Воспользуйтесь формой ниже, чтобы создать тикет.</p><br/>
+                            <h3 class="txt-bold alg-center clr-darkviolet">Создание тикета</h3>
+                            <form>
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <input required type="text" class="input-lg form-control" placeholder="Введите тему обращения" name="topic"/>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea required rows="6" class="form-control input-lg" name="message" style="max-height:200px; min-height:200px; max-width:100%; min-width:100%;" placeholder="Введите ваше обращение. Опишите его подробно."></textarea>
+                                    </div>
+                                    <div class="col-lg-12 alg-right">
+                                        <input type="file" accept="application/zip, image/jpeg, image/gif, image/png"/>
+                                        <input type="submit" class="btn btn-lg btn-success mgn-top-15" value="Отправить"/>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div>
-                            <ul class="news-list">
-                                <li><a href="#">Появился новый раздел в Wiki БРТ</a></li>
-                                <li><a href="#">Обновлена база интересных подписок</a></li>
-                                <li><a href="#">Доступна новая прошивка (v.1.91) для BiomedisM</a></li>
-                                <li><a href="#">Интересно: обновление прошивок</a></li>
+                        <div id="panel2" class="tab-pane fade">
+                            <h3>Ответы на ваши обращения</h3>
+                            <ul class="ticket-list">
+                                <li><a href="support-dialog.html">Не удается обновить устройство</a> <span class="badge dark-badge">1</span></li>
+                                <li class="completed"><a href="#">Включение устройства</a> <span class="glyphicon glyphicon-ok mgn-left-20 clr-green"></span></li>
                             </ul>
-                            <div class="alg-right"><a href="#" style="color:#fff;">еще новости <span class="glyphicon glyphicon-chevron-right"></span></a></div>
                         </div>
-                        <div class="clear-bth"></div>
                     </div>
-                </div>
 
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-blogs">
-                    <div class="tile">
-                        <img src="imagesi/blog.png"/>
-                        <div>блоги</div>
-                        <a href="#" title="Добавить запись в блог"><span></span></a>
-                        <a href="#" title="Открыть страницу своего блога"><span></span></a>
-                        <a href="#" title="Все блоги"><span></span></a>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-users">
-                    <a href="userlist.html">
-                        <div class="tile">
-                            <img src="imagesi/user.png"/>
-                            <div>пользователи</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-devices">
-                    <a href="#">
-                        <div class="tile">
-                            <img src="imagesi/devices.png"/>
-                            <div>приборы</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 tile-base tile-wiki">
-                        <div class="tile row">
-                            <a href="wiki.html">
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                    <span class="txt-bold">БРТ Wiki</span><br/>
-                                    <span>Справочник</span>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 alg-right">
-                                    <img src="imagesi/wiki.png"/>
-                                </div>
-                            </a>
-                        </div>
 
                 </div>
-
-                <div class="clearfix"></div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-settings">
-                    <a href="#">
-                        <div class="tile">
-                            <span class="glyphicon glyphicon-cog"></span>
-                            <div>настройки</div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-faq">
-                    <div class="tile">
-                        <span class="badge">2</span>
-                        <div>консультация</div>
-                        <div><a href="#" class="btn btn-default">Ответы</a> <a href="#"  class="btn btn-primary">Спросить</a></div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-support">
-
-                        <div class="tile">
-                            <span class="badge">1</span>
-                            <img src="imagesi/supp.png"/>
-                            <div><a href="support.html" style="color:#fff;">служба поддержки</a></div>
-                        </div>
-
-                </div>
-
-
-
-
 
             </div>
         </div>
@@ -281,7 +199,7 @@
                         <li><a href="#">Как вылечить почки</a></li>
                     </ul>
                     <div class="alg-center">
-                        <a href="populartopics.html" >еще темы</a>
+                        <a href="#" >еще темы</a>
                     </div>
                 </div>
             </div>
@@ -327,18 +245,6 @@
             <div class="corner-right-footer"></div>
         </div>
     </div>
-
-    <!--<div class="row alg-center">-->
-        <!--<div class="col-lg-12 clr-darkviolet">-->
-            <!--<ul class="list-inline socials">-->
-                <!--<li><b>&copy; BiomedisOnline, 2016</b></li>-->
-                <!--<li><a href="#">О проекте</a></li>-->
-                <!--<li><a href="#">Условия и соглашения</a></li>-->
-                <!--<li><a href="#">Помощь</a></li>-->
-                <!--<li><a href="#">Обратная свзяь</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
 
 </div>
 
