@@ -22,13 +22,13 @@ ul.questions-list li > a:first-child > span {
 }
 
 .question {
-    background:rgba(234,134,124, 0.2);
+    border-left:5px solid #ec1616;
     border-radius:7px;
     box-shadow: 0px 3px 10px 0px #c9c9c9;
 }
 
 .answer {
-    background:rgba(34,139,34, 0.2);
+    border-left:5px solid #0db13d;
     border-radius:7px;
     box-shadow: 0px 3px 10px 0px #c9c9c9;
 }
@@ -77,6 +77,9 @@ ul.questions-list li > a:first-child > span {
     color:#000;
 }
 
+.add-comment-block {
+    background: rgba(142, 193, 255, 0.11);
+}
 
 
 
