@@ -1,0 +1,39 @@
+.wiki-header {
+    margin-top:45px;
+    background-color: #ebe3ed;
+    padding:20px;
+}
+
+ul.navigation-wiki {
+    padding:0px; margin:0px;
+    list-style-type: none;
+    text-align: left;
+}
+
+ul.navigation-wiki li {
+    padding:10px;
+}
+
+.interesting-articles > ul {
+    padding:0px; margin:0px;
+    border:1px solid #c9c9c9;
+    border-radius:5px;
+    list-style-type: none;
+}
+
+.interesting-articles > ul li {
+    margin:0px auto;
+    border-bottom:1px solid #c9c9c9;
+    transition:1.0s;
+}
+
+.interesting-articles > ul li:hover {
+    background-color: #c9c9c9;
+    transition:0.5s;
+}
+
+.interesting-articles > ul li > a {
+    width:100%;
+    display: block;
+    padding:10px;
+}
