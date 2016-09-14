@@ -3,13 +3,11 @@ package ru.biomedis.online.site;
 import org.anantacreative.webengine.webcore.Core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.biomedis.online.site.WebService.StartPage.StartPage;
 
 import java.io.IOException;
 
 
-/**
- * Created by Ananta on 31.07.2016.
- */
 public class Main {
     public static final Logger logger = LogManager.getLogger("ru.biomedis.online.site");
 
@@ -29,7 +27,7 @@ public class Main {
 
 
         try{
-            // basic definitions will be here
+            core.addPage(new StartPage(core));
         } catch (Exception e){
             logger.error(e.getMessage(),e);
         }

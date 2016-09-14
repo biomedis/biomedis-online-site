@@ -129,23 +129,23 @@
     </div>
 
     <div class="row connect-block">
-            <h2 class="alg-center clr-darkviolet txt-bold pdng-top-10 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.0s" data-wow-offset="100">БУДЬТЕ С НАМИ В СЕТИ</h2>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay="0.2s" data-wow-offset="100">
-                <img src="imagesi/notebookman.png" class="center-block"/>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 text-block-connect wow zoomInUp" data-wow-duration="0.5s" data-wow-delay="0.2s" data-wow-offset="100">
-                <p class="alg-just mgn-top-30">
-                    Мы разработали уникальный онлайн-сервис, который позволяет вам следить за своим здоровьем откуда угодно, имея только доступ к Интернет
-                </p>
+        <h2 class="alg-center clr-darkviolet txt-bold pdng-top-10 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.0s" data-wow-offset="100">БУДЬТЕ С НАМИ В СЕТИ</h2>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay="0.2s" data-wow-offset="100">
+            <img src="imagesi/notebookman.png" class="center-block"/>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 text-block-connect wow zoomInUp" data-wow-duration="0.5s" data-wow-delay="0.2s" data-wow-offset="100">
+            <p class="alg-just mgn-top-30">
+                Мы разработали уникальный онлайн-сервис, который позволяет вам следить за своим здоровьем откуда угодно, имея только доступ к Интернет
+            </p>
 
-                <p class="alg-just mgn-top-25">
-                    Загружайте обновления программ, следите за новинками, задавайте вопросы, участвуйте в сообществе,
-                    занимайтесь здоровьем и многое другое!
-                </p>
-            </div>
-            <div class="col-lg-2 col-md-2 hidden-xs hidden-sm wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0.4s" data-wow-offset="100">
-                <img src="imagesi/runninggirl.png" style="margin-top:-73px;" class="pull-right"/>
-            </div>
+            <p class="alg-just mgn-top-25">
+                Загружайте обновления программ, следите за новинками, задавайте вопросы, участвуйте в сообществе,
+                занимайтесь здоровьем и многое другое!
+            </p>
+        </div>
+        <div class="col-lg-2 col-md-2 hidden-xs hidden-sm wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0.4s" data-wow-offset="100">
+            <img src="imagesi/runninggirl.png" style="margin-top:-73px;" class="pull-right"/>
+        </div>
     </div>
     <div class="row get-started-two wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="100">
         <div class="col-lg-12 alg-center pdng-top-15 pdng-left-15 pdng-right-15 pdng-bottom-30">
@@ -221,34 +221,7 @@
 
         </div>
     </div>
-    <div class="row footer wow fadeIn" data-wow-duration="0.6s" data-wow-delay="0.3s" data-wow-offset="100">
-        <div class="col-lg-12 mgn-top-20 white-line clr-white">
-            <ul class="list-inline socials">
-                <li>Читать о BiomedisOnline</li>
-                <li><a href="#"><img src="imagesi/vk.jpg"/></a></li>
-                <li><a href="#"><img src="imagesi/facebook.jpg"/></a></li>
-                <li><a href="#"><img src="imagesi/twitter.jpg"/></a></li>
-                <li><a href="#"><img src="imagesi/instagram.jpg"/></a></li>
-            </ul>
-        </div>
-        <div class="col-lg-12 mgn-top-25">
-            <span class="clr-white txt-bold">Разделы</span>
-            <ul class="footer-menu">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О проекте</a></li>
-                <li><a href="#">Wiki</a></li>
-                <li><a href="#">Приборы</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Помощь</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-
-        <div class="col-lg-12 alg-center white-line clr-white mgn-top-15">
-            <img src="imagesi/logo-biomedis.png" width="120"/>
-            <div class="corner-right-footer"></div>
-        </div>
-    </div>
+    ${footer_module}
 
 </div>
 
