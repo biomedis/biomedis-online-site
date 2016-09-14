@@ -34,8 +34,6 @@ public class Main {
             logger.error(e.getMessage(),e);
         }
 
-
-
         try {
             Thread.currentThread().sleep(Long.MAX_VALUE);
         } catch (InterruptedException e) {
