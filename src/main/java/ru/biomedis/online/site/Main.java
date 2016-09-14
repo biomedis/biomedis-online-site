@@ -11,7 +11,7 @@ import java.io.IOException;
  * Created by Ananta on 31.07.2016.
  */
 public class Main {
-    public static final Logger logger = LogManager.getLogger("org.anantacreative.samplesite");
+    public static final Logger logger = LogManager.getLogger("ru.biomedis.online.site");
 
     public static void main(String[] args)
     {
@@ -25,22 +25,18 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        Core core=Core.buildCore(cfg);
+        Core core = Core.buildCore(cfg);
 
 
-        try
-        {
-
-
-        } catch (Exception e)
-        {
+        try{
+            // basic definitions will be here
+        } catch (Exception e){
             logger.error(e.getMessage(),e);
         }
 
 
 
         try {
-
             Thread.currentThread().sleep(Long.MAX_VALUE);
         } catch (InterruptedException e) {
             throw new RuntimeException(e.getMessage());
