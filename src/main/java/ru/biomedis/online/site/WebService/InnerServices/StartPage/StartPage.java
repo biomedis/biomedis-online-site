@@ -1,4 +1,4 @@
-package ru.biomedis.online.site.WebService.StartPage;
+package ru.biomedis.online.site.WebService.InnerServices.StartPage;
 
 import com.google.gson.GsonBuilder;
 import org.anantacreative.webengine.webcore.Base.BasePage;
@@ -7,7 +7,6 @@ import org.anantacreative.webengine.webcore.data.ajaxresponse.SimpleAjaxJSONResp
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.biomedis.online.site.WebService.BasicPageItems.BasicPageItems;
-import ru.biomedis.online.site.WebService.BasicPageItems.FooterModule;
 import spark.Request;
 import spark.Response;
 
