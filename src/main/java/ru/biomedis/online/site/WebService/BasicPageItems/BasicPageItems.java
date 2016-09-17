@@ -1,15 +1,44 @@
 package ru.biomedis.online.site.WebService.BasicPageItems;
 
+import org.anantacreative.webengine.webcore.Base.BaseModule;
 import org.anantacreative.webengine.webcore.Core;
 
-public class BasicPageItems {
-    private FooterModule footerModule;
+import static org.anantacreative.webengine.webcore.Core.getContext;
 
-    public BasicPageItems(){
-        this.footerModule = null;
+public class BasicPageItems implements IBasicItems{
+
+    @Override
+    public BaseModule getFooterModule() {
+        return new FooterModule(getContext());
     }
 
-    public FooterModule getFooterModule(){
-        return new FooterModule(Core.getContext());
+    @Override
+    public BaseModule getHeaderModule() {
+        return new HeaderModule(getContext());
+    }
+
+    @Override
+    public BaseModule getIncludeModule() {
+        return new IncludeModule(getContext());
+    }
+
+    @Override
+    public BaseModule getInterestingFollowsModule() {
+        return new InterestingFollowsModule(getContext());
+    }
+
+    @Override
+    public BaseModule getPopularTopicsModule() {
+        return new PopularTopicsModule(getContext());
+    }
+
+    @Override
+    public BaseModule getServiceModule() {
+        return new ServiceModule(getContext());
+    }
+
+    @Override
+    public BaseModule getServiceMenuModule() {
+        return new ServiceMenuModule(getContext());
     }
 }
