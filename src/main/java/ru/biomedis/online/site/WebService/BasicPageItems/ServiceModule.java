@@ -3,17 +3,13 @@ package ru.biomedis.online.site.WebService.BasicPageItems;
 import org.anantacreative.webengine.webcore.Base.BaseModule;
 import org.anantacreative.webengine.webcore.Core;
 import org.anantacreative.webengine.webcore.data.ajaxresponse.SimpleAjaxJSONResponse;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import spark.Request;
 import spark.Response;
 
-public class PopularTopicsModule extends BaseModule {
-    public static final Logger logger = LogManager.getLogger(PopularTopicsModule.class.getName());
+public class ServiceModule extends BaseModule {
 
-
-    public PopularTopicsModule(Core context) {
-        super("BaseModules/popular_topics.ftl", context);
+    public ServiceModule(Core context) {
+        super("BasicModules/service_module.ftl", context);
     }
 
     @Override
