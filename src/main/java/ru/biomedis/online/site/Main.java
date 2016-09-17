@@ -3,7 +3,7 @@ package ru.biomedis.online.site;
 import org.anantacreative.webengine.webcore.Core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.biomedis.online.site.WebService.StartPage.StartPage;
+import ru.biomedis.online.site.WebService.InnerServices.StartPage.StartPage;
 
 import java.io.IOException;
 
