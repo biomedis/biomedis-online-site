@@ -1,3 +1,6 @@
 .idea/
 .idea/dataSources.local.xml
 target/
+/tmp
+online-site.iml
+/logs/
