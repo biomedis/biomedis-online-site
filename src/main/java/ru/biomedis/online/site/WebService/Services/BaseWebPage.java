@@ -10,6 +10,9 @@ import ru.biomedis.online.site.WebService.BasicPageItems.BasicPageItems;
 import spark.Request;
 import spark.Response;
 
+/**
+ * Page super class. We use the class for service pages (excepted StartPage)
+ */
 public abstract class BaseWebPage extends BasePage{
 
     public static final Logger logger = LogManager.getLogger(BaseWebPage.class.getName());
