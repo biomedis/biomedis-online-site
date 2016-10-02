@@ -3,7 +3,9 @@ package ru.biomedis.online.site;
 import org.anantacreative.webengine.webcore.Core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.biomedis.online.site.WebService.BasicPageItems.ServiceMenuExtension;
 import ru.biomedis.online.site.WebService.InnerServices.StartPage.StartPage;
+import ru.biomedis.online.site.WebService.Services.ServiceMainPage.ServiceMainPage;
 
 import java.io.IOException;
 
@@ -28,6 +30,8 @@ public class Main {
 
         try{
             core.addPage(new StartPage(core));
+            core.addExtension(new ServiceMenuExtension(core));
+            core.addPage(new ServiceMainPage(core));
         } catch (Exception e){
             logger.error(e.getMessage(),e);
         }

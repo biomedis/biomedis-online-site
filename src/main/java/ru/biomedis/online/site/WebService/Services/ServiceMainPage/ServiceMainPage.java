@@ -14,7 +14,7 @@ public class ServiceMainPage extends BaseWebPage {
     public static final Logger logger = LogManager.getLogger(ServiceMainPage.class.getName());
 
     public ServiceMainPage(Core context) {
-        super(context, "/main", "");
+        super(context, "/mainservice", "");
     }
 
     @Override

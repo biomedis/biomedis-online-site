@@ -12,7 +12,7 @@ public class InterestingFollowsModule extends BaseModule {
     public static final Logger logger = LogManager.getLogger(InterestingFollowsModule.class.getName());
 
     public InterestingFollowsModule(Core context) {
-        super("BaseModules/interesting_follows.ftl", context);
+        super("BasicModules/interesting_follows.ftl", context);
     }
 
     @Override

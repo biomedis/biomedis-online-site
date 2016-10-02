@@ -13,7 +13,7 @@ public class PopularTopicsModule extends BaseModule {
 
 
     public PopularTopicsModule(Core context) {
-        super("BaseModules/popular_topics.ftl", context);
+        super("BasicModules/popular_topics.ftl", context);
     }
 
     @Override

@@ -31,6 +31,6 @@ public class ServiceMenuExtension extends BaseExtension {
 
     @Override
     public String getTag() {
-        return null;
+        return tag;
     }
 }

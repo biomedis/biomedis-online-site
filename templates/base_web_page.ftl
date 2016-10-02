@@ -40,8 +40,8 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 right-container">
-            ${interesting_follows}
-            ${popular_topics}
+            ${interesting_follows_module}
+            ${popular_topics_module}
         </div>
     </div>
 

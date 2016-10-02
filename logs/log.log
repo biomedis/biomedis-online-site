@@ -1,0 +1,13 @@
+01.10.2016 16:26:39,655 E  [ org.anantacreative.webengine.webcore.ExtensionManager.getExt(ExtensionManager.java:37) logger_name = org.anantacreative.webengine.webcore , 
+                              thread_name = qtp1351323957-23 
+ ]  --> msg = Ключ расширения уже используетсяmain_menu 
+ 01.10.2016 16:28:29,905 E  [ org.anantacreative.webengine.webcore.ExtensionManager.getExt(ExtensionManager.java:37) logger_name = org.anantacreative.webengine.webcore , 
+                              thread_name = qtp319184442-23 
+ ]  --> msg = Ключ расширения уже используетсяmain_menu 
+ 02.10.2016 10:51:43,464 E  [ org.anantacreative.webengine.webcore.ExtensionManager.getExt(ExtensionManager.java:37) logger_name = org.anantacreative.webengine.webcore , 
+                              thread_name = qtp1636925473-18 
+ ]  --> msg = Ключ расширения уже используетсяmain_menu 
+ 02.10.2016 10:57:10,738 E  [ org.anantacreative.webengine.webcore.ExtensionManager.getExt(ExtensionManager.java:37) logger_name = org.anantacreative.webengine.webcore , 
+                              thread_name = qtp1700597970-21 
+ ]  --> msg = Ключ расширения уже используетсяmain_menu 
+ 
