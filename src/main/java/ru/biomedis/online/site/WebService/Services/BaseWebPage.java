@@ -6,7 +6,7 @@ import org.anantacreative.webengine.webcore.Core;
 import org.anantacreative.webengine.webcore.data.ajaxresponse.SimpleAjaxJSONResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.biomedis.online.site.WebService.BasicPageItems.BasicPageItems;
+import ru.biomedis.online.site.WebService.BasicPageItems.Modules.*;
 import spark.Request;
 import spark.Response;
 
@@ -23,17 +23,21 @@ public abstract class BaseWebPage extends BasePage{
 
     @Override
     public void pageLogic(Request request, Response response) {
-        BasicPageItems basicPageItems = new BasicPageItems();
 
-        getRoot().put("include_module", basicPageItems.getIncludeModule().render(request, response));
+        getRoot().put("include_module", new IncludeModule(getContext()).render(request, response));
 
-        getRoot().put("footer_module", basicPageItems.getFooterModule().render(request, response));
-        getRoot().put("header_module", basicPageItems.getHeaderModule().render(request, response));
-        getRoot().put("service_module", basicPageItems.getServiceModule().render(request, response));
-        getRoot().put("service_menu_module", basicPageItems.getServiceMenuModule().render(request, response));
+        if(getAdditionalIncludes(request, response) != null){
+            getRoot().put("additional_includes", getAdditionalIncludes(request, response));
+        }
 
-        getRoot().put("interesting_follows_module", basicPageItems.getInterestingFollowsModule().render(request, response));
-        getRoot().put("popular_topics_module", basicPageItems.getPopularTopicsModule().render(request, response));
+
+        getRoot().put("footer_module", new FooterModule(getContext()).render(request, response));
+        getRoot().put("header_module", new HeaderModule(getContext()).render(request, response));
+        getRoot().put("service_module", new ServiceModule(getContext()).render(request, response));
+        getRoot().put("service_menu_module", new ServiceMenuModule(getContext()).render(request, response));
+
+        getRoot().put("interesting_follows_module", new InterestingFollowsModule(getContext()).render(request, response));
+        getRoot().put("popular_topics_module", new PopularTopicsModule(getContext()).render(request, response));
 
 
 
@@ -51,4 +55,6 @@ public abstract class BaseWebPage extends BasePage{
     }
 
     public abstract String getPageContent(Request request, Response response);
+
+    public abstract String getAdditionalIncludes(Request request, Response response);
 }
