@@ -1,4 +1,4 @@
-package ru.biomedis.online.site.WebService.Services.ServiceMainPage;
+package ru.biomedis.online.site.WebService.Services.UserPage.Modules;
 
 import org.anantacreative.webengine.webcore.Base.BaseModule;
 import org.anantacreative.webengine.webcore.Core;
@@ -6,14 +6,14 @@ import org.anantacreative.webengine.webcore.data.ajaxresponse.SimpleAjaxJSONResp
 import spark.Request;
 import spark.Response;
 
-public class TestModule extends BaseModule {
+public class UserPageModule extends BaseModule {
 
-    public TestModule(String tplName, Core context) {
+    public UserPageModule(String tplName, Core context) {
         super(tplName, context);
     }
 
-    public TestModule(Core context) {
-        super("ServiceMainPage/main_page.ftl", context);
+    public UserPageModule(Core context) {
+        super("User/user_page.ftl", context);
     }
 
     @Override

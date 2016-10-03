@@ -21,14 +21,14 @@
                 <li class="visible-xs-block  dropup active" style="width:60px;">
                     <a class="dropdown-toggle active" data-toggle="dropdown" href="#">меню</a>
                     <ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
-                        <li><a href="main.html" class="active">сервисы</a></li>
-                        <li><a href="userdata.html">данные</a></li>
+                        <li><a href="/mainservice" class="active">сервисы</a></li>
+                        <li><a href="/userdata">данные</a></li>
                         <li><a href="messages.hhrml">сообщения (3)</a> </li>
                         <li><a href="allsubscribes.html">подписки</a></li>
                     </ul>
                 </li>
-                <li class="active hidden-xs"><a href="main.html" class="active">сервисы</a></li>
-                <li class="hidden-xs"><a href="userdata.html">данные</a></li>
+                <li class="active hidden-xs"><a href="/mainservice" class="active">сервисы</a></li>
+                <li class="hidden-xs"><a href="/userdata">данные</a></li>
                 <li class="hidden-xs"><a href="messages.html">сообщения</a>&nbsp;<span class="badge" style="margin-bottom:3px;" title="У вас 3 новых сообщения">3</span></li>
                 <li class="hidden-xs"><a href="allsubscribes.html">подписки</a></li>
             </ul>

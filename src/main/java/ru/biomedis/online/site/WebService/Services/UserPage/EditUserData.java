@@ -1,4 +1,4 @@
-package ru.biomedis.online.site.WebService.Services.ServiceMainPage;
+package ru.biomedis.online.site.WebService.Services.UserPage;
 
 import org.anantacreative.webengine.webcore.Core;
 import org.apache.logging.log4j.LogManager;
@@ -8,20 +8,23 @@ import ru.biomedis.online.site.WebService.Services.Modules;
 import spark.Request;
 import spark.Response;
 
-public class ServiceMainPage extends BaseWebPage {
-    public static final Logger logger = LogManager.getLogger(ServiceMainPage.class.getName());
+public class EditUserData extends BaseWebPage {
 
-    public ServiceMainPage(Core context) {
-        super(context, "/mainservice", "");
+    public static final Logger logger = LogManager.getLogger(EditUserData.class.getName());
+
+    public EditUserData(Core context, String path, String ajaxPath) {
+        super(context, path, ajaxPath);
+    }
+
+    public EditUserData(Core context) {
+        super(context, "/editdata", "");
     }
 
     @Override
     public String getPageContent(Request request, Response response) {
         Modules modules = new Modules();
         StringBuilder content = new StringBuilder();
-        content.append(modules.getMainPageModule().render(request, response));
+        content.append(modules.getEditUserDataModule().render(request, response));
         return content.toString();
     }
-
-
 }
