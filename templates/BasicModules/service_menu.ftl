@@ -11,7 +11,7 @@
     </div>
     <div id="navbarCollapse" class="collapse navbar-collapse" style="padding-right:15px;">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="main.html">Главная</a></li>
+            <li><a href="/mainservice">Главная</a></li>
             <li><a href="about.html">О проекте</a></li>
             <li><a href="wikimain.html">Wiki</a></li>
             <li><a href="blogs.html">Блоги</a></li>

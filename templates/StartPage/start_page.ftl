@@ -2,26 +2,9 @@
 <html>
 <head>
 
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="fancybox/jquery.fancybox.css"/>
-
-    <link rel="stylesheet" href="css/acwg.textcss.css"/>
+    ${include_module}
     <link rel="stylesheet" href="css/general.css"/>
-    <link rel="stylesheet" href="css/service.footer.css"/>
-    <link rel="stylesheet" href="css/service.mainmenu.css"/>
 
-    <script src="js/jquery-1.12.0.min.js"></script>
-    <script src="fancybox/jquery.fancybox.pack.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/general-scripts.js"></script>
-
-    <title>Biomedis Online</title>
 
 </head>
 
@@ -29,30 +12,7 @@
 
 <div class="container-fluid main-block">
 
-    <nav role="navigation" class="navbar center-block top-menu navbar-fixed-top">
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" style="background-color:#e0e0e0;">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <img src="imagesi/left-corner.jpg" class="left-corner"/>
-            <a href="#" class="navbar-brand"><img src="imagesi/logo.png" class="logotype"/></a>
-        </div>
-        <div id="navbarCollapse" class="collapse navbar-collapse" style="padding-right:15px;">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О проекте</a></li>
-                <li><a href="wikimain.html">Wiki</a></li>
-                <li><a href="faq.html">Консультации</a></li>
-                <li><a href="support.html">Помощь</a></li>
-                <li><a href="reviews.html">Отзывы</a></li>
-
-                <li><a href="login.html">ВОЙТИ</a></li>
-            </ul>
-        </div>
-    </nav>
+    ${menu_basic}
 
     <div class="row">
         <div class="get-started alg-center col-lg-12">

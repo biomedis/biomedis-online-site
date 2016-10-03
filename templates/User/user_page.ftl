@@ -2,7 +2,7 @@
 
     <!-- user edit link -->
     <div>
-        <a href="editdata.html" class="btn btn-default"><span  title="Редактировать данные" class="glyphicon glyphicon-pencil"></span></a>
+        <a href="/editdata" class="btn btn-default"><span  title="Редактировать данные" class="glyphicon glyphicon-pencil"></span></a>
     </div>
     <!-->
 
