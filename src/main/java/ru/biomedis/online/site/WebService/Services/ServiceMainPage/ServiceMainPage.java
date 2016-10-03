@@ -4,7 +4,7 @@ import org.anantacreative.webengine.webcore.Core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.biomedis.online.site.WebService.Services.BaseWebPage;
-import ru.biomedis.online.site.WebService.Services.Modules;
+import ru.biomedis.online.site.WebService.Services.ServiceMainPage.Modules.MainPageModule;
 import spark.Request;
 import spark.Response;
 
@@ -17,10 +17,14 @@ public class ServiceMainPage extends BaseWebPage {
 
     @Override
     public String getPageContent(Request request, Response response) {
-        Modules modules = new Modules();
         StringBuilder content = new StringBuilder();
-        content.append(modules.getMainPageModule().render(request, response));
+        content.append(new MainPageModule(getContext()).render(request, response));
         return content.toString();
+    }
+
+    @Override
+    public String getAdditionalIncludes(Request request, Response response) {
+        return null;
     }
 
 

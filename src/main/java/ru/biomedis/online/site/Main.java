@@ -3,6 +3,7 @@ package ru.biomedis.online.site;
 import org.anantacreative.webengine.webcore.Core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.biomedis.online.site.WebService.BasicPageItems.Extensions.BasicMenuExtension;
 import ru.biomedis.online.site.WebService.BasicPageItems.Extensions.ServiceMenuExtension;
 import ru.biomedis.online.site.WebService.InnerServices.StartPage.StartPage;
 import ru.biomedis.online.site.WebService.Services.ServiceMainPage.ServiceMainPage;
@@ -38,6 +39,7 @@ public class Main {
             core.addPage(new EditUserData(core));
 
 
+            core.addExtension(new BasicMenuExtension(core));
             core.addExtension(new ServiceMenuExtension(core));
 
         } catch (Exception e){
