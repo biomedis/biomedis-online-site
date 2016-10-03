@@ -6,7 +6,9 @@ import org.anantacreative.webengine.webcore.Core;
 import org.anantacreative.webengine.webcore.data.ajaxresponse.SimpleAjaxJSONResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.biomedis.online.site.WebService.BasicPageItems.BasicPageItems;
+import ru.biomedis.online.site.WebService.BasicPageItems.Modules.BasicMenuModule;
+import ru.biomedis.online.site.WebService.BasicPageItems.Modules.FooterModule;
+import ru.biomedis.online.site.WebService.BasicPageItems.Modules.IncludeModule;
 import spark.Request;
 import spark.Response;
 
@@ -23,12 +25,13 @@ public class StartPage extends BasePage {
 
     @Override
     public void pageLogic(Request request, Response response) {
-        BasicPageItems basicPageItems = new BasicPageItems();
-        renderBasicModules(request, response, basicPageItems);
+        renderBasicModules(request, response);
     }
 
-    private void renderBasicModules(Request request, Response response, BasicPageItems basicPageItems){
-        getRoot().put("footer_module", basicPageItems.getFooterModule().render(request, response));
+    private void renderBasicModules(Request request, Response response){
+        getRoot().put("footer_module", new FooterModule(getContext()).render(request, response));
+        getRoot().put("include_module", new IncludeModule(getContext()).render(request, response));
+        getRoot().put("menu_basic", new BasicMenuModule(getContext()).render(request, response));
     }
 
     @Override
