@@ -1,4 +1,4 @@
-package ru.biomedis.online.site.WebService.BasicPageItems;
+package ru.biomedis.online.site.WebService.BasicPageItems.Modules;
 
 import org.anantacreative.webengine.webcore.Base.BaseModule;
 import org.anantacreative.webengine.webcore.Core;
@@ -8,11 +8,11 @@ import org.apache.logging.log4j.Logger;
 import spark.Request;
 import spark.Response;
 
-public class ServiceMenuModule extends BaseModule {
-    public static final Logger logger = LogManager.getLogger(ServiceMenuModule.class.getName());
+public class IncludeModule extends BaseModule {
+    public static final Logger logger = LogManager.getLogger(IncludeModule.class.getName());
 
-    public ServiceMenuModule(Core context) {
-        super("BasicModules/service_menu.ftl", context);
+    public IncludeModule(Core context) {
+        super("BasicModules/include.ftl", context);
     }
 
     @Override
@@ -22,7 +22,6 @@ public class ServiceMenuModule extends BaseModule {
 
     @Override
     protected void moduleLogic(Request request, Response response) {
-        ServiceMenuExtension serviceMenuExtension = (ServiceMenuExtension) getContext().getExtension(ServiceMenuExtension.tag);
-        getRoot().put("menu_items", serviceMenuExtension.getMenus());
+
     }
 }

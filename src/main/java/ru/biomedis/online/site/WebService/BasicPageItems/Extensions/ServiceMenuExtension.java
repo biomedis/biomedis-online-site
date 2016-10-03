@@ -1,10 +1,11 @@
-package ru.biomedis.online.site.WebService.BasicPageItems;
+package ru.biomedis.online.site.WebService.BasicPageItems.Extensions;
 
 import org.anantacreative.webengine.webcore.Base.BaseExtension;
 import org.anantacreative.webengine.webcore.Core;
 import org.anantacreative.webengine.webcore.data.CoreData.MenuItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.biomedis.online.site.WebService.BasicPageItems.Modules.ServiceMenuModule;
 
 import java.util.List;
 

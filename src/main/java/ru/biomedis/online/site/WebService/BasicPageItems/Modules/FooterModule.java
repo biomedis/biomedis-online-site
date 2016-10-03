@@ -1,4 +1,4 @@
-package ru.biomedis.online.site.WebService.BasicPageItems;
+package ru.biomedis.online.site.WebService.BasicPageItems.Modules;
 
 import org.anantacreative.webengine.webcore.Base.BaseModule;
 import org.anantacreative.webengine.webcore.Core;
@@ -8,11 +8,15 @@ import org.apache.logging.log4j.Logger;
 import spark.Request;
 import spark.Response;
 
-public class InterestingFollowsModule extends BaseModule {
-    public static final Logger logger = LogManager.getLogger(InterestingFollowsModule.class.getName());
+public class FooterModule extends BaseModule {
+    public static final Logger logger = LogManager.getLogger(FooterModule.class.getName());
 
-    public InterestingFollowsModule(Core context) {
-        super("BasicModules/interesting_follows.ftl", context);
+    public FooterModule(String tplName, Core context) {
+        super(tplName, context);
+    }
+
+    public FooterModule(Core context) {
+        this("BasicModules/footer.ftl", context);
     }
 
     @Override

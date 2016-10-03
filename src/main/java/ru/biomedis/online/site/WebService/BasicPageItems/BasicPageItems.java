@@ -1,7 +1,7 @@
 package ru.biomedis.online.site.WebService.BasicPageItems;
 
 import org.anantacreative.webengine.webcore.Base.BaseModule;
-import org.anantacreative.webengine.webcore.Core;
+import ru.biomedis.online.site.WebService.BasicPageItems.Modules.*;
 
 import static org.anantacreative.webengine.webcore.Core.getContext;
 

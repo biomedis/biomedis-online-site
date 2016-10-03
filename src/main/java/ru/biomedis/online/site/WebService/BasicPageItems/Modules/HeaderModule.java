@@ -1,4 +1,4 @@
-package ru.biomedis.online.site.WebService.BasicPageItems;
+package ru.biomedis.online.site.WebService.BasicPageItems.Modules;
 
 import org.anantacreative.webengine.webcore.Base.BaseModule;
 import org.anantacreative.webengine.webcore.Core;
@@ -8,11 +8,11 @@ import org.apache.logging.log4j.Logger;
 import spark.Request;
 import spark.Response;
 
-public class IncludeModule extends BaseModule {
-    public static final Logger logger = LogManager.getLogger(IncludeModule.class.getName());
+public class HeaderModule extends BaseModule {
+    public static final Logger logger = LogManager.getLogger(HeaderModule.class.getName());
 
-    public IncludeModule(Core context) {
-        super("BasicModules/include.ftl", context);
+    public HeaderModule(Core context) {
+        super("BasicModules/header.ftl", context);
     }
 
     @Override
