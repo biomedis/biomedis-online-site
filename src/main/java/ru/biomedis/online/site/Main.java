@@ -5,6 +5,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.biomedis.online.site.WebService.BasicPageItems.Extensions.BasicMenuExtension;
 import ru.biomedis.online.site.WebService.BasicPageItems.Extensions.ServiceMenuExtension;
+import ru.biomedis.online.site.WebService.InnerServices.LoginPage.LoginPage;
+import ru.biomedis.online.site.WebService.InnerServices.SignUpPage.SignUpPage;
 import ru.biomedis.online.site.WebService.InnerServices.StartPage.StartPage;
 import ru.biomedis.online.site.WebService.Services.ServiceMainPage.ServiceMainPage;
 import ru.biomedis.online.site.WebService.Services.UserPage.EditUserData;
@@ -33,6 +35,8 @@ public class Main {
 
         try{
             core.addPage(new StartPage(core));
+            core.addPage(new LoginPage(core));
+            core.addPage(new SignUpPage(core));
 
             core.addPage(new ServiceMainPage(core));
             core.addPage(new UserPage(core));
