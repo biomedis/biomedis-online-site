@@ -17,7 +17,7 @@ public class SignUpPage extends BasePage {
     public static final Logger logger = LogManager.getLogger(SignUpPage.class.getName());
 
     public SignUpPage(Core context) {
-        super("SingUp/sign_up.ftl", context, "/signup", "");
+        super("SignUp/sign_up.ftl", context, "/signup", "");
     }
 
     public SignUpPage(String tplName, Core context, String path, String ajaxPath) {

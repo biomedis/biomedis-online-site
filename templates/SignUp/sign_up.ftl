@@ -4,6 +4,7 @@
 
     ${include_module}
     <link rel="stylesheet" href="css/service.registration.css"/>
+    <link rel="stylesheet" href="css/general.css"/>
 
 </head>
 
