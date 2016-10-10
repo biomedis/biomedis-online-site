@@ -18,9 +18,9 @@
         <div class="get-started alg-center col-lg-12">
             <h2 class="alg-center clr-violet txt-bold wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s">Жизнь без лекарств и болезней!</h2>
             <h4 class="alg-center clr-gray wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.5s">Biomedis Online - Будьте в сети, будьте здоровы</h4>
-            <a href="login.html" title="Приступить" class="btn btn-success input-lg get-started-btn wow fadeIn"  data-wow-duration="1.0s" data-wow-delay="1.0s">Приступить</a>
+            <a href="/login" title="Приступить" class="btn btn-success input-lg get-started-btn wow fadeIn"  data-wow-duration="1.0s" data-wow-delay="1.0s">Приступить</a>
             <br/>
-            <a href="login.html" class="clr-gray wow fadeIn" data-wow-duration="1.0s" data-wow-delay="1.0s" style="font-size:9pt;">у меня уже есть аккаунт</a>
+            <a href="/login" class="clr-gray wow fadeIn" data-wow-duration="1.0s" data-wow-delay="1.0s" style="font-size:9pt;">у меня уже есть аккаунт</a>
             <img src="imagesi/hand-tablet.png" class="hand-tablet hidden-xs wow fadeInUp" data-wow-duration="1.8s" data-wow-delay="0.3s"/>
         </div>
     </div>
@@ -111,7 +111,7 @@
         <div class="col-lg-12 alg-center pdng-top-15 pdng-left-15 pdng-right-15 pdng-bottom-30">
             <h2 class="alg-center clr-white txt-shadowlight">ОТКРОЙТЕ БОЛЬШЕ ВОЗМОЖНОСТЕЙ</h2>
             <h3 class="alg-center clr-white txt-shadowlight">С БИОМЕДИС-ОНЛАЙН</h3><br/>
-            <a href="login.html" class="get-started-btn btn btn-success input-lg" style="margin-top:10%;">Приступить сейчас</a>
+            <a href="/login" class="get-started-btn btn btn-success input-lg" style="margin-top:10%;">Приступить сейчас</a>
         </div>
     </div>
 
@@ -176,7 +176,7 @@
                 <div>
                     <iframe width="365" height="210" src="https://www.youtube.com/embed/g9-Qnbiyr9Y" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <a href="login.html" class="btn btn-success get-started-btn input-lg">Приступить</a>
+                <a href="/login" class="btn btn-success get-started-btn input-lg">Приступить</a>
             </div>
 
         </div>
