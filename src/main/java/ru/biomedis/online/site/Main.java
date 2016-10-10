@@ -23,7 +23,7 @@ public class Main {
         //  Core.Config cfg=new Core.Config();
 
         Core.Config cfg = getConfigFromINI();
-        addSerмiceItemsToCore(cfg);
+        addServiceItemsToCore(cfg);
         sleepCurrentThread();
 
     }
@@ -39,7 +39,7 @@ public class Main {
         return cfg;
     }
 
-    private static void addSerмiceItemsToCore(Core.Config cfg){
+    private static void addServiceItemsToCore(Core.Config cfg){
         Core core = Core.buildCore(cfg);
         try{
             addPages(core);
