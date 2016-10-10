@@ -93,7 +93,7 @@
 <div class="clearfix"></div>
 
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 tile-base tile-settings">
-    <a href="editdata.html">
+    <a href="/editdata">
         <div class="tile">
             <span class="glyphicon glyphicon-cog"></span>
             <div>настройки</div>
