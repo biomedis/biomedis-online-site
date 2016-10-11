@@ -20,12 +20,9 @@ public class Main {
     public static final Logger logger = LogManager.getLogger("ru.biomedis.online.site");
 
     public static void main(String[] args) {
-        //  Core.Config cfg=new Core.Config();
-
         Core.Config cfg = getConfigFromINI();
         addServiceItemsToCore(cfg);
         sleepCurrentThread();
-
     }
 
     private static Core.Config getConfigFromINI(){
